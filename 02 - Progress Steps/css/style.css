@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root{
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html{
+}
+
+body {
+  background-color: #f6f7fb;
+  font-family: "Muli", sans-serif;
+}
+
+.form-container{
+  border: 1px solid red;
+  width: 100%;
+}
+
+section.visible{
+  min-height: 80vh;
+}
+
+section.hidden{
+  display: none;
+}
+
+.evo-container{
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 1rem 0 0 0;
+}
+
+.progress-container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 0 2rem 0;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before{
+  background-color: var(--line-border-empty);
+  position:absolute;
+  top:50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  content: "";
+}
+
+.progress{
+  background-color: var(--line-border-fill);
+  position:absolute;
+  top:50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+.circle{
+  background-color: white;
+  color: #999;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+  transition: 0.4s ease;
+}
+
+.circle.active{
+  border-color: var(--line-border-fill);
+}
+
+.btn{
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.6rem 3rem;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
+
+.btn:focus{
+  outline: 0;
+}
+
+.btn:disabled{
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
