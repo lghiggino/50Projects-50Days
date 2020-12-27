@@ -37,16 +37,40 @@ body {
 }
 
 .form-container{
-  border: 1px solid red;
   width: 100%;
 }
 
 section.visible{
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 section.hidden{
   display: none;
+}
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  overflow: hidden;
+}
+
+img.cancha{
+  display: block;
+  margin: 5rem auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 16px;
+}
+
+p.txt-cancha{
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1.01rem;
+  word-spacing: 1.15rem;
+  line-height: 2rem;
 }
 
 .evo-container{
