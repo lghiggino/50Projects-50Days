@@ -1,69 +1,65 @@
-@import url("https://gonts-googleapis.com/css?family=Lato&display=swap");
-
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
-}
-
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
+@import url("https://gonts-googleapis.com/css?family=Helvetica Neue");
+@import url("https://gonts-googleapis.com/css?family=Verdana");
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-html{
+* {
+  box-sizing: border-box;
 }
 
 body {
-}
-
-section > section{
-
-}
-
-a{
-}
-
-
-
-h1,h2,h3,h4,h5,h6, span, p, a, button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 
+h1{
+  color:#248888; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 46px; 
+  font-weight: 100; 
+  line-height: 50px; 
+  letter-spacing: 1px; 
+  padding: 40px 0 40px; 
+  border-bottom: double #999;
+  margin-bottom: 40px;
+} 
 
-span{
-
+.box{
+  background-color: #248888;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease-out;
 }
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
+.box:nth-of-type(even){
+  transform: translateX(-400%);
 }
 
-footer {
-
+.box.show{
+  transform: translateX(0);
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-
+.box h2{
+  color: #e5ebee; 
+  font-family: 'Verdana', sans-serif; 
+  font-size: 16px; 
+  line-height: 26px; 
+  margin: 0;
+}
 
 /******************************************
 /* MEDIA QUERIES
