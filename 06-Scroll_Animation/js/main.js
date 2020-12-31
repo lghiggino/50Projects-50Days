@@ -1,4 +1,4 @@
-console.log("is this on?")
+console.log("Boxes animation are on boxes.js")
 
 const boxes = document.querySelectorAll(".box")
 
