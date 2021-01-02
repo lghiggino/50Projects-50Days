@@ -1,5 +1,5 @@
 @import url("https://gonts-googleapis.com/css?family=Helvetica Neue");
-@import url("https://gonts-googleapis.com/css?family=Verdana");
+@import url("https://gonts-googleapis.com/css?family=Poppins:wght@200;400");
 
 /******************************************
 /* BASE STYLES
@@ -10,13 +10,46 @@
 
 body {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
+  background: url(../assets/soundboard.jpg);
 }
 
+.btn{
+  background: #40332d;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.btn:focus{
+  outline:none;
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+.btn:active{
+  scale: 0.95;
+}
+
+#buttons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
 h1{
   color:#248888; 
