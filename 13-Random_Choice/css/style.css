@@ -1,5 +1,6 @@
-@import url("https://gonts-googleapis.com/css?family=Helvetica Neue");
-@import url("https://gonts-googleapis.com/css?family=Verdana");
+@import url("https://fonts.googleapis.com/css?family=Helvetica Neue");
+@import url("https://fonts.googleapis.com/css?family=Verdana");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 /******************************************
 /* BASE STYLES
@@ -9,13 +10,14 @@
 }
 
 body {
+  background: #2b88f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: ;
+  height: 100vh;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 
@@ -37,6 +39,11 @@ h2{
   font-size: 16px; 
   line-height: 26px; 
   margin: 0;
+}
+
+h3{
+  color: #e5ebee;
+  font-family: ;
 }
 
 p{ color: #bbc3c8; 
