@@ -17,5 +17,5 @@ counters.forEach(counter => {
         }
     }
 
-    updateCounter()
+    setTimeout(updateCounter, 1000)
 })
