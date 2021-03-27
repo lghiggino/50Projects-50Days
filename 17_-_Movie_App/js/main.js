@@ -7,28 +7,6 @@ const IMG_PATH = "https://image.tmdb.org/t/p/w1280"
 const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=4ba3c3e2200f3937e93cfe0b4f6d6ea8&query=";
 
 
-
-//on enter in the search
-
-
-
-//clear the DOM
-
-//fetch the APIAdress
-
-
-// fetch(APIAdress)
-//     .then(res =>  res.json())
-//     .then(data => {
-//         console.log(data);
-//         //  create the cards
-//     })
-//     .catch(error => {
-//         console.log(error)
-//     })
-
-
-
 getMovies(API_URL)
 
 //with async await
